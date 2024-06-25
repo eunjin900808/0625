@@ -1,0 +1,104 @@
+@charset " utf-8";
+*{padding: 0; margin: 0; box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+li,ul,ol{list-style: none;}
+
+#wrap{
+    background-color: beige;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.list{
+    overflow: hidden;
+}
+
+/* 8개 li마다 명령어 주기 */
+.list li{
+    /* background-color: aqua; */
+    float: left;
+    width: calc(1100px / 4);
+    height: 300px;
+    border: 3px solid black;
+    margin-right: 20px;
+}
+
+.list1, .list5{
+    margin-left: 20px;
+}
+
+/* .list1, .list2, .list3, .list4{
+    margin-bottom: 20px;
+} */
+
+.m1{
+    margin-bottom: 20px;
+}
+
+.list li:nth-child(odd){
+    background-color: pink;
+}
+
+.list li:nth-child(even){
+    background-color: rgb(236, 236, 175);
+}
+
+.list li a{
+    display: block;
+    /* width 상속 받아오지만 height는 상속못받음 */
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.text{
+    /* div 블럭 구조 - width값 상속 받아옴 */
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+    height: 300px;
+    padding: 20px 10px;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    transition: all 1s;
+}
+
+.text h2{
+    margin-bottom: 15px;
+}
+
+.text h2:hover{
+    color: blue;
+    /* text-decoration: underline; */
+    /* 밑줄 */
+}
+
+.text .p1{
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    letter-spacing: -2px;
+    /* word-spacing: -2px; */
+    /* 글자간격 */
+}
+
+.text .p2{
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    /* 앞글자 대문자 */
+    color: purple;
+}
+
+.text .p3{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list li a:hover .text{
+    top: 100px;
+}
+
+.p1{}
+.p2{}
+.p3{}

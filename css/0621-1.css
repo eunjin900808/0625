@@ -1,0 +1,212 @@
+@charset " utf-8";
+*{padding: 0; margin: 0; box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+li,ul,ol{list-style: none;}
+body{
+    font-size: 12px;
+}
+
+#wrap{
+    width: 925px;
+    margin: 0 auto;
+}
+
+.header{
+    /* width: 100%; */
+    /* 블럭구조는 상속받아오기떄문에 안적어도된다 */
+}
+
+.top_menu{
+    height: 30px;
+    background-color: #efefef;
+    border-bottom: 1px solid gray;
+}
+
+.top_menu ul{
+    text-align: right;
+}
+
+.top_menu ul li{
+    display: inline-block;
+}
+
+.top_menu ul li a{
+    line-height: 29px;
+    padding: 0 10px;
+}
+
+.top_menu ul a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+
+.logo_banner{
+    overflow: hidden;
+    /* background-color: beige; */
+}
+
+.logo{
+    float: left;
+    margin-top: 20px;
+}
+
+.banner{
+    float: right;
+}
+
+.main_menu{
+    /* background-color: aqua; */
+}
+
+.main_menu ul{
+    overflow: hidden;
+}
+
+.main_menu ul li{
+    float: left;
+}
+.main_menu ul li a{}
+
+/* content영역 */
+.content{}
+
+.con_menu{}
+
+.con_menu img{
+    /* img는 인라인구조 */
+    vertical-align: bottom;
+}
+
+.con_menu ul{
+    display: inline-block;
+    /* ul블럭 구조인데 img 옆으로 붙게 하려고 구조를 인라인블럭으로 변경 */
+}
+
+.con_menu ul li{
+    display: inline-block;
+}
+
+.con_menu ul li a{
+    display: block;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+
+.con_menu ul li a:hover{
+    background:linear-gradient(rgb(219, 185, 141), rgb(87, 49, 0));
+    border-radius: 20px;
+    color: white;
+}
+
+.cont_inner{
+    background: url(../images/style_bar.jpg) no-repeat center top;
+    margin: 10px 0;
+    padding: 20px 0 0 20px;
+}
+.cont_inner p{}
+.cont_inner p span{
+    color: rgb(226, 53, 0);
+}
+
+.item{
+    width: 860px;
+    /* 925부모크기 */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.item li{
+    width: 200px;
+    height: 300px;
+    float: left;
+    border: 1px solid gray;
+    text-align: center;
+    margin: 0 20px 20px 0;
+}
+
+.item_4, .item_8{
+    margin: 0 0 20px 0 !important;
+}
+
+.item_1{
+    background: url(../images/pro1.jpg) no-repeat;
+}
+.item_2{
+    background: url(../images/pro2.jpg) no-repeat;
+}
+.item_3{
+    background: url(../images/pro3.jpg) no-repeat;
+}
+.item_4{
+    background: url(../images/pro4.jpg) no-repeat;
+}
+.item_5{
+    background: url(../images/pro5.jpg) no-repeat;
+}
+.item_6{
+    background: url(../images/pro6.jpg) no-repeat;
+}
+.item_7{
+    background: url(../images/pro7.jpg) no-repeat;
+}
+.item_8{
+    background: url(../images/pro8.jpg) no-repeat;
+}
+
+.item li a{
+    display: block;
+    height: 100%;
+    /* 그림전체 손가락모양 보이게 */
+    position: relative;
+    overflow: hidden;
+}
+
+
+.text{
+    background: rgba(0, 81, 255, 0.5);
+    color: white;
+    height: 250px;
+    padding: 20px 15px;
+    position: absolute;
+    left: 0;
+    top: 240px;
+    border-radius: 20px 20px 0 0;
+    transition: all 1s;
+}
+/* .item li a .text{} */
+
+.text h2{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.text h2:hover{
+    color: rgb(78, 0, 0);
+}
+
+.text .p1{
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.text .p2{
+    margin-bottom: 10px;
+    color: rgb(228, 221, 255);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.text .p3{
+    color: rgb(255, 191, 191);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.item li a:hover .text{
+    top: 120px;
+}
+
+.cont_inner2{
+    height: 30px;
+    background: url(../images/style_bar2.jpg)no-repeat center bottom;
+}
